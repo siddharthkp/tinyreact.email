@@ -1,0 +1,94 @@
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10%;
+      max-width: 700px;
+      margin: 0 auto;
+      background: #e6edf1;
+      --purple: #638ee1;
+      --dark-purple: #316de0;
+      --subtle-text: #38578a;
+    }
+    body,
+    input,
+    button {
+      color: #37465f;
+      font-size: 21px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+        Roboto, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+    }
+    h3 {
+      color: var(--subtle-text);
+      font-weight: normal;
+    }
+    form {
+      margin: 100px 0;
+    }
+    label {
+      display: block;
+      margin: 20px 0 20px 2px;
+    }
+    input {
+      border: 1px solid #ced3d9;
+      border-radius: 4px;
+      width: calc(70% - 20px);
+      padding: 10px;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      background: #316de0;
+      color: #fff;
+      width: calc(30% - 20px);
+    }
+    a {
+      text-decoration: none;
+      color: #316de0;
+      border-bottom: 2px solid #c5d4f1;
+    }
+    #subscribed {
+      margin: 100px 0;
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div>
+      <h1>Top 3 React articles of the week in your inbox.</h1>
+      <h3>Short and sweet. No spam.</h3>
+    </div>
+    <form
+      action="https://buttondown.email/api/emails/embed-subscribe/tinyreact"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.email/tinyreact', 'popupwindow')"
+      class="embeddable-buttondown-form"
+    >
+      <label for="bd-email">Enter your email</label>
+      <input
+        type="email"
+        name="email"
+        id="bd-email"
+        placeholder="Your email (you@example.com)"
+      />
+      <input type="hidden" value="1" name="embed" />
+      <input type="submit" value="Subscribe" />
+    </form>
+    <label id="subscribed">Subscribed. Check your inbox.</label>
+    <div class="details" style="margin-top:8px">
+      <a href="https://buttondown.email/tinyreact/archive"
+        >read previous issue</a
+      >
+    </div>
+  </div>
+  <script>
+    if (location.href.includes("s=1")) {
+      document.querySelector("form").style.display = "none";
+      document.querySelector("#subscribed").style.display = "block";
+    }
+  </script>
+</body>
