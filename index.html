@@ -27,9 +27,7 @@
     </form>
     <label id="subscribed">Subscribed. Check your inbox.</label>
     <div class="details" style="margin-top:8px">
-      <a href="https://buttondown.email/tinyreact/archive"
-        >read previous issue</a
-      >
+      <a href="/2019-03-19">Read latest issue</a>
     </div>
   </div>
   <script>
@@ -38,4 +36,23 @@
       document.querySelector("#subscribed").style.display = "block";
     }
   </script>
+  <!-- Fathom - simple website analytics - https://usefathom.com -->
+  <script>
+    (function(f, a, t, h, o, m) {
+      a[h] =
+        a[h] ||
+        function() {
+          (a[h].q = a[h].q || []).push(arguments);
+        };
+      (o = f.createElement("script")),
+        (m = f.getElementsByTagName("script")[0]);
+      o.async = 1;
+      o.src = t;
+      o.id = "fathom-script";
+      m.parentNode.insertBefore(o, m);
+    })(document, window, "//cdn.usefathom.com/tracker.js", "fathom");
+    fathom("set", "siteId", "NPXEYXXL");
+    fathom("trackPageview");
+  </script>
+  <!-- / Fathom -->
 </body>
