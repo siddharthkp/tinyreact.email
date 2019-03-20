@@ -28,7 +28,10 @@ form {
 }
 label {
   display: block;
-  margin: 20px 0 20px 2px;
+  margin: 20px 0 20px 0;
+}
+.left-buffer {
+  margin-left: 2px;
 }
 input {
   border: 1px solid #ced3d9;
