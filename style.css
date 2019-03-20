@@ -75,3 +75,15 @@ a {
   color: #316de0;
   border-bottom: 2px solid #c5d4f1;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: calc(100% - 40px);
+    min-width: auto;
+  }
+  input,
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+  }
+}
