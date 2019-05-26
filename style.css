@@ -59,8 +59,11 @@ ul {
   padding-left: 0;
   margin-top: 50px;
 }
-li {
+ul li {
   margin-bottom: 50px;
+}
+ol li {
+  margin-bottom: 10px;
 }
 
 h3 {
