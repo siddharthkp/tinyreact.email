@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-height: 100vh;
+  min-width: 600px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: #e6edf1;
+  --purple: #638ee1;
+  --dark-purple: #316de0;
+  --subtle-text: #38578a;
+}
+body,
+input,
+button {
+  color: #37465f;
+  font-size: 21px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1 {
+  margin-bottom: 50px;
+}
+h3 {
+  color: var(--subtle-text);
+  font-weight: normal;
+}
+
+form {
+  margin: 100px 0;
+}
+label {
+  display: block;
+  margin: 20px 0 20px 0;
+}
+.left-buffer {
+  margin-left: 2px;
+}
+input {
+  border: 1px solid #ced3d9;
+  border-radius: 4px;
+  width: calc(70% - 20px);
+  padding: 10px;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background: #316de0;
+  color: #fff;
+  width: calc(30% - 20px);
+}
+a {
+  text-decoration: none;
+  color: #316de0;
+  border-bottom: 2px solid #c5d4f1;
+}
+#subscribed {
+  margin: 100px 0;
+  display: none;
+}
+
+.links p {
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1em;
+}
+p {
+  font-size: 0.75em;
+}
+a {
+  text-decoration: none;
+  color: #316de0;
+  border-bottom: 2px solid #c5d4f1;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: calc(100% - 40px);
+    min-width: auto;
+  }
+  input,
+  input[type="submit"] {
+    display: block;
+    width: 100%;
+  }
+}
