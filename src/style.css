@@ -76,6 +76,11 @@ a {
   color: #316de0;
   border-bottom: 2px solid #c5d4f1;
 }
+blockquote {
+  color: var(--subtle-text);
+  font-style: italic;
+  margin-left: 0;
+}
 
 @media only screen and (max-width: 600px) {
   body {
