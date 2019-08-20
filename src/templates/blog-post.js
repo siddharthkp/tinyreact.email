@@ -22,12 +22,12 @@ class BlogPostTemplate extends React.Component {
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
 
-        <p>
+        <footer>
           <Link to="/">
             Get emails like this in your inbox, every Tuesday.{" "}
           </Link>
           Short and sweet. No spam.
-        </p>
+        </footer>
       </Layout>
     )
   }
