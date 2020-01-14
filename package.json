@@ -1,6 +1,9 @@
 {
   "name": "tinyreact.email",
   "private": true,
+  "engines": {
+    "node": "12.x"
+  },
   "dependencies": {
     "gatsby": "^2.13.31",
     "gatsby-image": "^2.2.6",
