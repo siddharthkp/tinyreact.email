@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -14,7 +13,16 @@ function BlogIndex(props) {
     window.open("https://buttondown.email/tinyreact", "popupwindow")
   }
 
-  return (
+  const subscribed = props.location.search.includes("s=1")
+
+  return subscribed ? (
+    <Layout location={props.location} title={"Your subscription is confirmed."}>
+      <h3>
+        Sent the <Link to={latestPost.node.fields.slug}>latest issue</Link> to
+        your inbox.
+      </h3>
+    </Layout>
+  ) : (
     <Layout location={props.location} title={siteTitle}>
       <SEO />
       <h3>Short and sweet. No spam.</h3>
