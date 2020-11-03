@@ -7,7 +7,7 @@ function Sponsor(props) {
   const siteTitle = data.site.siteMetadata.title
   return (
     <main>
-      <h1>Sponsorship tinyreact</h1>
+      <h1>Sponsor tinyreact</h1>
       <p>Stats for September:</p>
       <ul>
         <li>4 issues</li>
