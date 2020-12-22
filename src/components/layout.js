@@ -13,7 +13,7 @@ class Layout extends React.Component {
       header = (
         <>
           <h3>{date}</h3>
-          <h1>Top 3 React resources of the week:</h1>
+          <h1>3 curated React resources for the week:</h1>
         </>
       )
     }
