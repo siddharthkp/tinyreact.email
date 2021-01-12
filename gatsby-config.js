@@ -27,12 +27,5 @@ module.exports = {
     `gatsby-plugin-feed`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-favicon`,
-    {
-      resolve: "gatsby-plugin-fathom",
-      options: {
-        trackingUrl: "sid.usesfathom.com",
-        siteId: "NPXEYXXL",
-      },
-    },
   ],
 }

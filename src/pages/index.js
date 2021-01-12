@@ -11,6 +11,7 @@ function BlogIndex(props) {
 
   function onSubmit() {
     window.open("https://buttondown.email/tinyreact", "popupwindow")
+    if (window.fathom) window.fathom.trackGoal("OQAWQENM", 0)
   }
 
   const subscribed = props.location.search.includes("s=1")
@@ -26,7 +27,6 @@ function BlogIndex(props) {
     <Layout location={props.location} title={siteTitle}>
       <SEO />
       <h3>Short and sweet. No spam.</h3>
-
       <form
         action="https://buttondown.email/api/emails/embed-subscribe/tinyreact"
         method="post"
@@ -35,7 +35,7 @@ function BlogIndex(props) {
         className="embeddable-buttondown-form"
       >
         <label className="left-buffer" htmlFor="bd-email">
-          Enter your email
+          Join 2889 React developers, enter your email
         </label>
         <input
           type="email"
@@ -46,7 +46,6 @@ function BlogIndex(props) {
         <input type="hidden" value="1" name="embed" />
         <input type="submit" value="Subscribe" />
       </form>
-
       <Link to={latestPost.node.fields.slug}>Read latest issue</Link>
     </Layout>
   )
