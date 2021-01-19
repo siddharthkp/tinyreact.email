@@ -35,7 +35,7 @@ function BlogIndex(props) {
         className="embeddable-buttondown-form"
       >
         <label className="left-buffer" htmlFor="bd-email">
-          Join 2889 React developers, enter your email
+          Join 2905 React developers, enter your email
         </label>
         <input
           type="email"
