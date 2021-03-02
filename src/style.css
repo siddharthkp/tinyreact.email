@@ -43,12 +43,14 @@ input {
   border-radius: 4px;
   width: calc(70% - 20px);
   padding: 10px;
+  box-sizing: border-box;
 }
 input[type="submit"] {
   cursor: pointer;
   background: #316de0;
   color: #fff;
   width: calc(30% - 20px);
+  margin-left: 4px;
 }
 a {
   text-decoration: none;
@@ -81,6 +83,10 @@ footer,
 code {
   font-size: 0.75em;
 }
+footer input,
+footer button {
+  font-size: 1em;
+}
 
 a {
   text-decoration: none;
@@ -102,5 +108,9 @@ blockquote {
   input[type="submit"] {
     display: block;
     width: 100%;
+  }
+  input[type="submit"] {
+    margin-top: 4px;
+    margin-left: 0px;
   }
 }

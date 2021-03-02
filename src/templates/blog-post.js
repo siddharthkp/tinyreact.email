@@ -6,6 +6,11 @@ import SEO from "../components/seo"
 
 class BlogPostTemplate extends React.Component {
   render() {
+    function onSubmit() {
+      window.open("https://buttondown.email/tinyreact", "popupwindow")
+      if (window.fathom) window.fathom.trackGoal("OQAWQENM", 0)
+    }
+
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
 
@@ -23,10 +28,26 @@ class BlogPostTemplate extends React.Component {
         />
 
         <footer>
-          <Link to="/">
-            Get emails like this in your inbox, every Tuesday.{" "}
-          </Link>
-          Short and sweet. No spam.
+          <form
+            action="https://buttondown.email/api/emails/embed-subscribe/tinyreact"
+            method="post"
+            target="popupwindow"
+            onSubmit={onSubmit}
+            className="embeddable-buttondown-form"
+          >
+            <label className="left-buffer" htmlFor="bd-email">
+              Get emails like this in your inbox, every Tuesday. Short and
+              sweet. No spam.
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="bd-email"
+              placeholder="Your email (you@example.com)"
+            />
+            <input type="hidden" value="1" name="embed" />
+            <input type="submit" value="Subscribe" />
+          </form>
         </footer>
       </Layout>
     )
