@@ -4,11 +4,10 @@ function Sponsor(props) {
   return (
     <main>
       <h1>Sponsor tinyreact</h1>
-      <p>Stats for September:</p>
+      <p>Stats for last 4 issues:</p>
       <ul>
         <li>3040 subscribers</li>
         <li>40% open rate</li>
-        <li>4 issues / month</li>
       </ul>
       <br />
       <p>Cost: $400 for 4 issues</p>

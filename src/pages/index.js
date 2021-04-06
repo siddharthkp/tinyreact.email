@@ -47,6 +47,9 @@ function BlogIndex(props) {
         <input type="submit" value="Subscribe" />
       </form>
       <Link to={latestPost.node.fields.slug}>Read latest issue</Link>
+      <br />
+      <br />
+      <Link to="/sponsor">Sponsor</Link>
     </Layout>
   )
 }
