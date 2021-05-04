@@ -83,6 +83,9 @@ footer,
 code {
   font-size: 0.75em;
 }
+p > code {
+  font-size: 1em;
+}
 footer input,
 footer button {
   font-size: 1em;
