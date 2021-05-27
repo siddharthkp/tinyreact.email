@@ -37,7 +37,7 @@ class BlogPostTemplate extends React.Component {
           >
             <label className="left-buffer" htmlFor="bd-email">
               Get emails like this in your inbox, every Tuesday. Short and
-              sweet. No spam.
+              sweet. No spam..
             </label>
             <input
               type="email"
