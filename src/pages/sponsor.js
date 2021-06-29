@@ -6,7 +6,7 @@ function Sponsor(props) {
       <h1>Sponsor tinyreact</h1>
       <p>Stats for last 4 issues:</p>
       <ul>
-        <li>3097 subscribers</li>
+        <li>3110 subscribers</li>
         <li>40% open rate</li>
       </ul>
       <br />
